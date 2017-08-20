@@ -70,7 +70,6 @@ h3 {
 }
 
 aside {
-/*  text-transform: uppercase;*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

@@ -9,50 +9,57 @@
 
 </head>
 <body>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+[카카오링크 v2] 링크 버튼 (디폴트, 피드형)
+</h3>
+</div>
+<div class="panel-body">
+<h4>카카오톡 앱이 설치되어 있는 모바일 기기라면 아래의 링크가 동작합니다.</h4>
 <a id="kakao-link-btn" href="javascript:;">
-<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+<img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 </a>
+</div>
+</div>
 <script type='text/javascript'>
   //<![CDATA[
     // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('82d5027a5bd2ce96e185c9d67a012c13');
+    Kakao.init('3e786f8df14fcfc89d159421a6a7c9b6');
     // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
     Kakao.Link.createDefaultButton({
       container: '#kakao-link-btn',
       objectType: 'feed',
       content: {
-        title: '온슈어 카카오링크 테스트v1',
-        description: '#한화생명 #보험 #카카오링크 #이은성 #분위기 #소개팅',
-        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com'
-        }
+    	title: '딸기 치즈 케익',
+    	description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+    	imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+    	link: {
+    	  mobileWebUrl: 'https://developers.kakao.com',
+    	  webUrl: 'https://developers.kakao.com'
+    	}
       },
       social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845
+    	likeCount: 286,
+    	commentCount: 45,
+    	sharedCount: 845
       },
-      buttons: [
-        {
-          title: '웹으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com'
-          }
-        },
-        {
-          title: '앱으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com'
-          }
+      buttons: [{
+    	title: '웹으로 보기',
+    	link: {
+    	  mobileWebUrl: 'https://developers.kakao.com',
+    	  webUrl: 'https://developers.kakao.com'
         }
-      ]
+      },
+      {
+    	title: '앱으로 보기',
+    	link: {
+    	  mobileWebUrl: 'https://developers.kakao.com',
+    	  webUrl: 'https://developers.kakao.com'
+    	}
+      }]
     });
   //]]>
 </script>
-
 </body>
 </html>

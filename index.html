@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-<title>KakaoLink v2 Demo(Default / Feed) - Kakao JavaScript SDK</title>
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>BHN - LES</title>
 </head>
 <body>
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-[카카오링크 v2] 링크 버튼 (디폴트, 피드형)
-</h3>
+<div class="w3-container">
+<nav class="w3-bar w3-black"><a href="index.html" class="w3-bar-item w3-button w3-hover-blue">경력사항</a><a href="cert.html" class="w3-bar-item w3-button w3-hover-blue">기술인증</a><a href="ref.html" class="w3-bar-item w3-button w3-hover-blue">개발참조문서</a><a href="tutorial.html" class="w3-bar-item w3-button w3-hover-blue">자습서</a><a href="contact.html" class="w3-bar-item w3-button w3-hover-blue">연락하기</a></nav>
+<section>
+<h2>현재상황</h2>
+<article>
+잡인터뷰 후 확정대기 중
+</article>
+</section>
+<section>
+<h2>경력사항</h2>
+<article>
+  <div class="w3-panel w3-card">
+    <div class="w3-container w3-padding-24">
+      <h3>한화생명 온슈어 웹 프로젝트</h3>
+      <table class="w3-table-all">
+      <tr><th>개발</th><td>인픽스</td></tr>
+      <tr><th>기간</th><td>2017.9 ~ 2017.10 (2개월)</td></tr>
+      <tr><th>기술</th><td>JQuery, 전자정부프레임워크, MS-SQL, Jeus</td></tr>
+      <tr><th>업무내용</th><td>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="w3-panel w3-card">
+    <div class="w3-container w3-padding-24">
+      <h3>아트투게더 기술책임</h3>
+      <table class="w3-table-all">
+      <tr><th>개발</th><td>이은성 본인</td></tr>
+      <tr><th>기간</th><td>2017.7 ~ 2017.8 (2개월)</td></tr>
+      <tr><th>기술</th><td>Bootstrap, JQuery, SpringMVC Java, Mybatis, MariaDB, Amazon S3</td></tr>
+      <tr><th>업무내용</th><td>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</td></tr>
+      </table>     
+    </div>
+  </div>
+  <div class="w3-panel w3-card">
+    <div class="w3-container w3-padding-24">
+      <h3>농협 IFRS9구축</h3>
+      <table class="w3-table-all">
+      <tr><th>개발</th><td>위드정보</td></tr>
+      <tr><th>기간</th><td>2017.10 ~ 2017.4 (7개월)</td></tr>
+      <tr><th>기술</th><td>NH이지빌더, 프로프레임C, Oracle</td></tr>
+      <tr><th>업무내용</th><td>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</td></tr>
+      </table>     
+    </div>
+  </div>
+  <div class="w3-panel w3-card">
+    <div class="w3-container w3-padding-24">
+      <h3>농협 오픈플랫폼 고도화</h3>
+      <table class="w3-table-all">
+      <tr><th>개발</th><td>웹캐시</td></tr>
+      <tr><th>기간</th><td>2016.4 ~ 2019.9 (6개월)</td></tr>
+      <tr><th>기술</th><td>JQuery, Jexframe, Oracle</td></tr>
+      <tr><th>업무내용</th><td>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</td></tr>
+      </table>     
+    </div>
+  </div>
+</article>
+</section>
 </div>
-<div class="panel-body">
-<h4>카카오톡 앱이 설치되어 있는 모바일 기기라면 아래의 링크가 동작합니다.</h4>
-<a id="kakao-link-btn" href="javascript:;">
-<img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
-</a>
-</div>
-</div>
-<script type='text/javascript'>
-  //<![CDATA[
-    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('3e786f8df14fcfc89d159421a6a7c9b6');
-    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createDefaultButton({
-      container: '#kakao-link-btn',
-      objectType: 'feed',
-      content: {
-    	title: '딸기 치즈 케익',
-    	description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-    	imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-    	link: {
-    	  mobileWebUrl: 'https://developers.kakao.com',
-    	  webUrl: 'https://developers.kakao.com'
-    	}
-      },
-      social: {
-    	likeCount: 286,
-    	commentCount: 45,
-    	sharedCount: 845
-      },
-      buttons: [{
-    	title: '웹으로 보기',
-    	link: {
-    	  mobileWebUrl: 'https://developers.kakao.com',
-    	  webUrl: 'https://developers.kakao.com'
-        }
-      },
-      {
-    	title: '앱으로 보기',
-    	link: {
-    	  mobileWebUrl: 'https://developers.kakao.com',
-    	  webUrl: 'https://developers.kakao.com'
-    	}
-      }]
-    });
-  //]]>
-</script>
 </body>
 </html>

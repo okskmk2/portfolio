@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="common.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+<title>BHN - LES</title>
+</head>
+<body>
+	<div data-include="headernav.html"></div>
+	<section class="w3-content">
+		<button onclick="callApi()">api호출</button>
+		<div id="example">
+			<p>Original message: "{{ message }}"</p>
+			<p>Computed reversed message: "{{ reversedMessage }}"</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function callApi() {
+			var ajax = new XMLHttpRequest();
+			ajax.onreadystatechange = function() {
+				if (ajax.readyState == 4 && ajax.status == 200) {
+					var jsonstring = ajax.responseText;
+					var data = JSON.parse(jsonstring);
+					var vm = new Vue({
+						el : '#example',
+						data : data,
+						computed : {
+							reversedMessage : function() {
+								return this.message.split('').reverse()
+										.join('')
+							}
+						}
+					})
+				}
+			}
+			ajax.open("GET", "https://baeun-180812.appspot.com/TestApi",
+					true);
+			ajax.send(null);
+		}
+	</script>
+</body>
+</html>

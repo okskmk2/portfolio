@@ -4,24 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="base.css">
+<script src="common.js" defer></script>
 <title>BHN - LES</title>
 </head>
 <body>
-	<header class="w3-indigo">
-		<h1 class="w3-content">이은성 프로그래밍 경력정보</h1>
-	</header>
-	<div class="w3-black">
-		<nav class="w3-bar w3-content">
-			<a href="index.html" class="w3-bar-item w3-button w3-hover-blue">경력사항</a><a
-				href="skill.html" class="w3-bar-item w3-button w3-hover-blue">기술목록</a><a
-				href="ref.html" class="w3-bar-item w3-button w3-hover-blue">개발참조</a><a
-				href="tutorial.html" class="w3-bar-item w3-button w3-hover-blue">자습서</a><a
-				href="contact.html" class="w3-bar-item w3-button w3-hover-blue">연락하기</a>
-		</nav>
-	</div>
+	<div data-include="headernav.html"></div>
 	<section class="w3-content">
 		<h2>자습서</h2>
-		<article></article>
+		<section class="boxContainer">
+			<article class="w3-card w3-panel box">
+				<h3>JavaEE8 튜토리얼</h3>
+				<ul class="w3-ul">
+					<li><a class="w3-button" href="tutorial/jsf.html">facelet/JSF</a></li>
+					<li><a class="w3-button" href="tutorial/jpa.html">JPA</a></li>
+					<li><a class="w3-button" href="tutorial/rs.html">RESTful javx-rs</a></li>
+				</ul>
+			</article>
+			<article class="w3-card w3-panel box">
+				<h3>Nodejs express</h3>
+				<ul class="w3-ul">
+					<li></li>
+				</ul>
+			</article>
+			<article class="w3-card w3-panel box">
+				<h3>ES6</h3>
+				<ul class="w3-ul">
+					<li></li>
+				</ul>
+			</article>
+			<article class="w3-card w3-panel box">
+				<h3>CSS3</h3>
+				<ul class="w3-ul">
+					<li></li>
+				</ul>
+			</article>
+		</section>
 	</section>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="callApi()">api호출</button>
+	<output id="output"></output>
+	<script type="text/javascript">
+		function callApi() {
+			var ajax = new XMLHttpRequest();
+			ajax.onreadystatechange = function() {
+				if (ajax.readyState == 4 && ajax.status == 200) {
+					document.getElementById("output").innerHTML = ajax.responseText;
+				}
+			}
+			ajax.open("GET", "https://baeun-180812.appspot.com/TestApi",
+					true);
+			ajax.send(null);
+		}
+	</script>
+</body>
+</html>

@@ -4,26 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="base.css">
 <title>BHN - LES</title>
+<style type="text/css">
+.box{
+display:flex;
+flex-wrap:wrap;
+}
+.item{
+margin-left:10px;
+width:300px;
+}
+</style>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body{font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;}
+</style>
 </head>
 <body>
-<header class="w3-blue">
-	<h1 class="w3-content">이은성 프로그래밍 경력정보</h1>
-</header>
-<div class="w3-dark-grey">
-	<nav class="w3-bar w3-content">
-		<a href="index.html" class="w3-bar-item w3-button w3-hover-indigo">경력사항</a><a
-			href="skill.html" class="w3-bar-item w3-button w3-hover-indigo">기술목록</a><a
-			href="ref.html" class="w3-bar-item w3-button w3-hover-indigo">개발참조</a><a
-			href="tutorial.html" class="w3-bar-item w3-button w3-hover-indigo">자습서</a><a
-			href="contact.html" class="w3-bar-item w3-button w3-hover-indigo">연락하기</a>
-	</nav>
-</div>
-	<section class="w3-content">
+	<div w3-include-html="headernav.html"></div>
+	<script>
+	w3.includeHTML();
+</script>
+	<div class="w3-content w3-container">
 		<h2>개발참조</h2>
-		<section class="boxContainer">
-			<article class="w3-card w3-panel box">
+		<section class="box">
+			<article class="w3-card w3-panel item w3-mobile">
 				<h3>웹표준</h3>
 				<ul class="w3-ul">
 					<li><a href="https://www.w3.org/standards/webdesign/">웹표준
@@ -33,14 +39,14 @@
 							IBM Article</a></li>
 				</ul>
 			</article>
-			<article class="w3-card w3-panel box">
+			<article class="w3-card w3-panel item w3-mobile">
 				<h3>HTML</h3>
 				<ul class="w3-ul">
 					<li><a href="https://www.w3schools.com/html/html_entities.asp">HTML
 							엔티티</a></li>
 				</ul>
 			</article>
-			<article class="w3-card w3-panel box">
+			<article class="w3-card w3-panel item w3-mobile">
 				<h3>CSS</h3>
 				<ul class="w3-ul">
 					<li><a
@@ -48,7 +54,7 @@
 							색상</a></li>
 				</ul>
 			</article>
-			<article class="w3-card w3-panel box">
+			<article class="w3-card w3-panel item w3-mobile">
 				<h3>SQL</h3>
 				<ul class="w3-ul">
 					<li><a href="https://docs.microsoft.com/ko-kr/sql/">SQL
@@ -60,7 +66,7 @@
 							공식 레퍼런스</a></li>
 				</ul>
 			</article>
-			<article class="w3-card w3-panel box">
+			<article class="w3-card w3-panel item w3-mobile">
 				<h3>Java</h3>
 				<ul class="w3-ul">
 					<li><a href="https://mvnrepository.com/">Maven Repository</a></li>
@@ -69,6 +75,6 @@
 				</ul>
 			</article>
 		</section>
-	</section>
+	</div>
 </body>
 </html>

@@ -5,28 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>BHN - LES</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body{font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;}
+</style>
 </head>
 <body>
-<header class="w3-blue">
-	<h1 class="w3-content">이은성 프로그래밍 경력정보</h1>
-</header>
-<div class="w3-dark-grey">
-	<nav class="w3-bar w3-content">
-		<a href="index.html" class="w3-bar-item w3-button w3-hover-indigo">경력사항</a><a
-			href="skill.html" class="w3-bar-item w3-button w3-hover-indigo">기술목록</a><a
-			href="ref.html" class="w3-bar-item w3-button w3-hover-indigo">개발참조</a><a
-			href="tutorial.html" class="w3-bar-item w3-button w3-hover-indigo">자습서</a><a
-			href="contact.html" class="w3-bar-item w3-button w3-hover-indigo">연락하기</a>
-	</nav>
-</div>
-	<section class="w3-content">
+	<div w3-include-html="headernav.html"></div>
+	<script>
+	w3.includeHTML();
+	</script>
+	<div class="w3-content w3-container">
 		<h2>연락하기</h2>
-		<address class="w3-panel w3-card">
-			<p>
-				이름 : 이은성<br>이메일 : okskmk2@naver.com
-			</p>
+		<address class="w3-panel w3-card w3-padding-large">			
+				이름 : 이은성<br>이메일 : okskmk2@naver.com			
 		</address>
 		<p>초급 프리렌서에게 프로젝트에 소개해드립니다.</p>
-	</section>
+	</div>
 </body>
 </html>

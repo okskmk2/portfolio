@@ -2,28 +2,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>BHN - LES</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="base.css">
-<title>BHN - LES</title>
+<style type="text/css">
+.box{
+display:flex;
+flex-wrap:wrap;
+}
+.item{
+margin-left:10px;
+width:300px;
+}
+</style>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body{font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;}
+</style>
 </head>
 <body>
-<header class="w3-blue">
-	<h1 class="w3-content">이은성 프로그래밍 경력정보</h1>
-</header>
-<div class="w3-dark-grey">
-	<nav class="w3-bar w3-content">
-		<a href="index.html" class="w3-bar-item w3-button w3-hover-indigo">경력사항</a><a
-			href="skill.html" class="w3-bar-item w3-button w3-hover-indigo">기술목록</a><a
-			href="ref.html" class="w3-bar-item w3-button w3-hover-indigo">개발참조</a><a
-			href="tutorial.html" class="w3-bar-item w3-button w3-hover-indigo">자습서</a><a
-			href="contact.html" class="w3-bar-item w3-button w3-hover-indigo">연락하기</a>
-	</nav>
-</div>
-	<section class="w3-content">
+<div w3-include-html="headernav.html"></div>
+<script>
+	w3.includeHTML();
+</script>
+	<div class="w3-content w3-container">
 		<h2>사용가능한 기술</h2>
-		<article class="boxContainer">
-			<div class="w3-card w3-panel box">
+		<article class="box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>Web</h3>
 				<ul class="w3-ul">
 					<li>HTML5</li>
@@ -31,14 +37,14 @@
 					<li>JS</li>
 				</ul>
 			</div>
-			<div class="w3-card w3-panel box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>Language</h3>
 				<ul class="w3-ul">
 					<li>Java</li>
 					<li>C/C++</li>
 				</ul>
 			</div>
-			<div class="w3-card w3-panel box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>Web Framework</h3>
 				<ul class="w3-ul">
 					<li>JQuery</li>
@@ -49,14 +55,14 @@
 					<li>Facelet/JSF</li>
 				</ul>
 			</div>
-			<div class="w3-card w3-panel box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>Web skill etc</h3>
 				<ul class="w3-ul">
 					<li>웹 데이터 크롤링 Selenium Java</li>
 					<li>RESTful API 서버구축</li>
 				</ul>
 			</div>
-			<div class="w3-card w3-panel box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>Web Hosting and Cloud</h3>
 				<ul class="w3-ul">
 					<li>Google App engine</li>
@@ -64,7 +70,7 @@
 					<li>Microsoft Azure</li>
 				</ul>
 			</div>
-			<div class="w3-card w3-panel box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>DataBase</h3>
 				<ul class="w3-ul">
 					<li>OracleDB</li>
@@ -73,13 +79,13 @@
 					<li>Google Datastore</li>
 				</ul>
 			</div>
-			<div class="w3-card w3-panel box">
+			<div class="w3-card w3-panel item w3-mobile">
 				<h3>Mobile app</h3>
 				<ul class="w3-ul">
 					<li>Android</li>
 				</ul>
 			</div>
 		</article>
-	</section>
+	</div>
 </body>
 </html>

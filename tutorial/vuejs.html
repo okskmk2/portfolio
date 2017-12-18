@@ -7,10 +7,14 @@
 <script src="common.js" defer></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
 <title>BHN - LES</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
 	<div data-include="headernav.html"></div>
-	<section class="w3-content">
+		<script>
+	w3.includeHTML();
+	</script>
+	<section class="w3-content w3-container">
 		<button onclick="callApi()">api호출</button>
 		<div id="example">
 			<p>Original message: "{{ message }}"</p>

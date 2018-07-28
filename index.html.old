@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3bhn.css">
+<title>BHN - LES</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+	<div w3-include-html="headernav.html"></div>
+	<script src="common.js"></script>
+	<script>
+	w3.includeHTML(callback);
+	</script>
+	<div class="w3-content w3-container" style="margin-bottom: 6rem">
+		<h2>현재상황</h2>
+		<article class="w3-panel w3-card w3-yellow">
+			<p>SK 하이닉스 펌웨어개발환경시스템 유지보수</p>
+			<p>SK 하이닉스 IBM LSF(부하분산시설) 웹 콘솔프로젝트 개발</p>
+		</article>
+		<h2>경력사항</h2>
+		<article>
+			<div class="w3-panel w3-card w3-padding">
+				<h3>SK 하이닉스 펌웨어개발환경시스템 지원</h3>
+				<table class="w3-table-all">
+				<colgroup>
+				<col style="width: 85px;">
+				</colgroup>
+					<tr>
+						<th>소속사</th>
+						<td>모우소프트</td>
+					</tr>
+					<tr>
+						<th>직급</th>
+						<td>과장</td>
+					</tr>
+					<tr>
+						<th>단가</th>
+						<td>430만원</td>
+					</tr>
+					<tr>
+						<th>기간</th>
+						<td>2018.1 ~ (기본 1년)</td>
+					</tr>
+					<tr>
+						<th>기술</th>
+						<td>python, HTML, CSS, js, springframeworkMVC java, Mybatis, WebLogic, OracleDB</td>
+					</tr>
+					<tr>
+						<th>업무내용</th>
+						<td>SK 하이닉스 반도체 펌웨어 개발을 위한 개발환경을 유지보수하는 업무.
+							python으로 로그 파싱하여 DB에 영속화 하기, 펌웨어개발 프로젝트 PMS 유지보수(스프링프레임워크),
+							python으로 RESTful API 개발관리 중.
+							IBM LSF(로드 쉐어 퍼시실리티) 웹 어플리케이션 개발.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-panel w3-card w3-padding">
+				<h3>한화생명 온슈어 웹 프로젝트 (금융)</h3>
+				<table class="w3-table-all">
+				<colgroup>
+				<col style="width: 85px;">
+				</colgroup>
+					<tr>
+						<th>소속사</th>
+						<td>인픽스</td>
+					</tr>
+					<tr>
+						<th>직급</th>
+						<td>과장</td>
+					</tr>
+					<tr>
+						<th>단가</th>
+						<td>400만원</td>
+					</tr>
+					<tr>
+						<th>기간</th>
+						<td>2017.9 ~ 2017.10 (2개월)</td>
+					</tr>
+					<tr>
+						<th>기술</th>
+						<td>JQuery, 전자정부프레임워크, MS-SQL, Jeus</td>
+					</tr>
+					<tr>
+						<th>업무내용</th>
+						<td>한화생명보험(여의도 63빌딩) 웹개발 단기프로젝트에서 개발하였습니다. 전자정부프레임워크 환경에서
+							AJAX호출, 카카오링크연동, 알림톡 배치시스템개발, 전화상담연동을 전사화하였습니다. 40일 동안 API 12개,
+							JSP 15본, SQL 14본을 개발하였습니다. 퍼블리셔로부터 화면을 받아 JSP로 변환하고 보험사코어와
+							통신연동하거나 DB CRUD 화면을 구현하였습니다. (대고객 웹) 관리자 화면메뉴 2개를 개발하였습니다.(배치시스템
+							도입, 전화상담스트립트 CRUD화면) 그 외의 이메일 연동, 카카오알림톡 연동, 카카오링크 연동을 수행하였습니다.</td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-panel w3-card w3-padding">
+				<h3>아트투게더 기술책임 (금융)</h3>
+				<table class="w3-table-all">
+				<colgroup>
+				<col style="width: 85px;">
+				</colgroup>
+					<tr>
+						<th>소속사</th>
+						<td>이은성 본인</td>
+					</tr>
+					<tr>
+						<th>직급</th>
+						<td>기술총책임</td>
+					</tr>
+					<tr>
+						<th>단가</th>
+						<td>250만원</td>
+					</tr>
+					<tr>
+						<th>기간</th>
+						<td>2017.7 ~ 2017.8 (2개월)</td>
+					</tr>
+					<tr>
+						<th>기술</th>
+						<td>Bootstrap, JQuery, SpringMVC Java, Mybatis, MariaDB,
+							Amazon S3</td>
+					</tr>
+					<tr>
+						<th>업무내용</th>
+						<td>스타트업 기술총책임자로 기술스택선정, 개발프로세스 정의, 개발로드맵 정의, 웹프레임워크 제반 환경설정,
+							웹호스팅관리, 웹설계 및 개발을 주도하였습니다.(웹기획은 제외) 사용된 기술은 springMVC, mybatis-spring,
+							jsp-jstl, google app engine입니다. 개발영역은 뉴스피드형 웹사이트 관리자웹, 대고객용 모든 웹을 개발하였습니다.</td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-panel w3-card w3-padding">
+				<h3>농협 IFRS9구축 (금융)</h3>
+				<table class="w3-table-all">
+				<colgroup>
+				<col style="width: 85px;">
+				</colgroup>
+					<tr>
+						<th>소속사</th>
+						<td>위드정보</td>
+					</tr>
+					<tr>
+						<th>직급</th>
+						<td>대리</td>
+					</tr>
+					<tr>
+						<th>단가</th>
+						<td>330만원</td>
+					</tr>
+					<tr>
+						<th>기간</th>
+						<td>2017.10 ~ 2017.4 (7개월)</td>
+					</tr>
+					<tr>
+						<th>기술</th>
+						<td>NH이지빌더, 프로프레임C, Oracle</td>
+					</tr>
+					<tr>
+						<th>업무내용</th>
+						<td>
+						
+						농협 IFRS9구축 프로젝트에서 개발을 담당하였습니다.							
+						기존시스템전환작업
+						쿼리 366본 수정, 화면 16본 수정, C언어 서비스 13본 수정
+						대손준비금
+						화면 13본 개발, 서비스 20본 개발, 쿼리 24본 코딩
+						MFT공통
+						화면 2본 개발, 서비스 4본 개발, 쿼리 6본 코딩
+						손실충당금 집계/보고서
+						화면 27본 유지보수, 서비스 40여개의 유지보수 60본 이상의 쿼리 보수
+						금융상품평가개선
+						화면 9본 개발, 서비스 12본 개발, 쿼리 18본 개발
+						 프로젝트 내에서 팀원이 나가는 경우, 제가 주로 인수인계를 맡았습니다. 빠르고 정확한 개발을 하며, 문서관리능력이
+						우수한 편이라고 자부합니다.
+						
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-panel w3-card w3-padding">
+				<h3>농협 오픈플랫폼 고도화 (금융)</h3>
+				<table class="w3-table-all">
+				<colgroup>
+				<col style="width: 85px;">
+				</colgroup>
+					<tr>
+						<th>소속사</th>
+						<td>웹캐시</td>
+					</tr>
+					<tr>
+						<th>직급</th>
+						<td>대리</td>
+					</tr>
+					<tr>
+						<th>단가</th>
+						<td>200만원</td>
+					</tr>
+					<tr>
+						<th>기간</th>
+						<td>2016.4 ~ 2019.9 (6개월)</td>
+					</tr>
+					<tr>
+						<th>기술</th>
+						<td>JQuery, Jexframe, Oracle</td>
+					</tr>
+					<tr>
+						<th>업무내용</th>
+						<td>농협 오픈플랫폼 고도화 프로젝트에서 API팀에서 개발을 하였습니다. JAVA, ORACLE SQL
+							기술을 사용하였습니다. 업무내용은 채널링으로, 제휴기관정보조회와 관련된 업무를 개발하였습니다. 16개의 API를
+							개발하였습니다. JSP 16본, JAVA20본, SQL 20본</td>
+					</tr>
+				</table>
+			</div>
+		</article>
+	</div>
+</body>
+</html>
